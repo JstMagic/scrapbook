@@ -1,0 +1,767 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Montserrat, Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.67);
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+a:hover{
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+body {
+    line-height: 1;
+    /*
+IE
+*/
+    scrollbar-base-color: rgba(36, 255, 0, 1);
+    scrollbar-3dlight-color: rgba(36, 255, 0, 1);
+    scrollbar-highlight-color: rgba(36, 255, 0, 1);
+    scrollbar-track-color: #fff;
+    scrollbar-arrow-color: rgba(36, 255, 0, 1);
+    scrollbar-shadow-color: rgba(36, 255, 0, 1);
+    scrollbar-dark-shadow-color: rgba(36, 255, 0, 1);
+}
+
+/*    Chrome */
+
+::-webkit-scrollbar { width: 11px !important; height: 4px;}
+::-webkit-scrollbar-button {  background-color: rgb(36, 255, 0); }
+::-webkit-scrollbar-track {  background-color: rgba(255, 255, 255, 0)}
+::-webkit-scrollbar-track-piece { background-color: rgb(137, 137, 137);}
+::-webkit-scrollbar-thumb { height: 50px; background-color: rgb(11, 255, 61); border-radius: 0px;}
+::-webkit-scrollbar-corner { background-color: rgb(27, 195, 42);}
+::-webkit-resizer { background-color: rgb(25, 247, 104);}
+
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.well table{
+    width: 100%;
+}
+
+div{
+    width: 100%;
+}
+font{
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+body{
+    background-color: #fff;
+
+    color: #222223;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    /*background:rgba(100 100 50 0.8);*/
+    padding: 0 !important;
+
+}
+
+.content{
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+.content .container{
+    /*margin: 0 auto;
+    margin-top: 7%;
+    margin-bottom: 7%;*/
+    width: 30%;
+    height: 650px;
+    /*background:none repeat scroll 0% 0% rgba(255, 255, 255, 0.85)*/
+}
+
+.content .container header{
+
+display: block;
+    background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.7);
+    padding: 1.7em 1.7em 2em;
+    margin: 0em 0em 2em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 0.4em 0.4em 0px 0px;
+    box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.5) inset;
+}
+
+article {
+    text-align: center;
+    padding: 0px;
+}
+
+header h3{
+    color: #9EA7B3;
+    font-size: 1.2em;
+    margin: 0px;
+}
+header h4{
+    color: #619AB4;
+}
+
+#wrapper {
+    background: rgba(255, 255, 255, 0.6) none repeat scroll 0% 0%;
+    border-radius: 0.4em;
+    padding: 0px;
+    overflow: hidden;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.4);
+}
+.loginNow{
+    position: relative;
+/*background: rgba(255, 255, 255, 0.7) none repeat scroll 0% 0%*/
+rgba(255, 255, 255, 0.7) none repeat scroll 0% 0%;
+height: 300px;
+}
+
+.loginNow h4{
+    font-size: 20px !important;
+    color: #7D7D7D;
+    padding: 1%;
+}
+
+.loginContent{
+    margin: 0px auto;
+    background: rgba(255, 255, 255, 0.81) none repeat scroll 0% 0%;
+    width: 100%;
+    height: auto;
+    padding: 5%;
+}
+
+.leftColumn{
+    width: 40%;
+    float: left;
+    margin-right: 2%;
+}
+.rightColumn{
+    width: 58%;
+    background-color: rgba(255, 255, 255, 0.64);
+    float: left;
+    height: auto;
+}
+
+.floatLeft{
+    float: left;
+}
+
+.user-header{
+    background-color: #eeeeee;
+    overflow: hidden;
+    -moz-box-shadow: 0px 0px 5px #AAA;
+    -webkit-box-shadow: 0px 0px 5px #AAA;
+    box-shadow: 0px 0px 5px #AAA;
+
+
+}
+
+.container-fluid{
+    width: 85%;
+    margin: 2% auto 0;
+    padding: 1% !important;
+    -webkit-box-shadow:0 0 1px #b6b4b3;
+    -moz-box-shadow: 0 0 1px #b6b4b3;
+    box-shadow: 0 0 1px #b6b4b3;
+    /*background: url(../img/homepage/body-bg1.png) repeat scroll 0px 0px transparent;*/
+    /*background-color: #dadada;*/
+    background-color: rgba(218, 218, 218, 0.53);
+}
+
+.user-header ul{
+    width: 20%;
+    float: left;
+    padding: 2%;
+    background-color: rgba(228, 228, 228, 0.47);
+}
+.user-header ul li{
+    width: 100%;
+}
+
+.user-header ul li img{
+    width: 90%;
+    padding: 2%;
+    border-radius: 55%;
+}
+.rowOne{
+    width: 100%;
+    background-color: #eeeeee;
+    margin-bottom: 2%;
+}
+.rowTwo{
+    width: 100%;
+    background-color: #e1e1e1;
+}
+
+#tabs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#tabs ul li {
+    width: 33.3%;
+    float: left;
+    /*border: 1px solid #000;*/
+    /*margin: 3px 3px 0px 3px;*/
+    padding: 2.5% 5%;
+    background-color: #fff;
+    color: #888888;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#tabs .active {
+    background-color: #d50c0c !important;
+    color: #fff !important;
+}
+
+.rowThree{
+    width: 100%;
+    /*background-color: rgba(225, 225, 225, 0.30)*/
+    /*background-color: rgba(166, 115, 236, 0.56) !important*/
+    background-color: rgba(182, 182, 182, 0.48) !important;
+}
+
+.rowThree #tabs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.rowThree #tabs ul li {
+    width: 33.3%;
+    float: left;
+    /*border: 1px solid #000;*/
+    /*margin: 3px 3px 0px 3px;*/
+    padding: 2.5% 5%;
+    background-color: #fff;
+    color: #888888;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.rowThree #tabs .active {
+    /*background-color: #9a61d5 !important;*/
+    background-color: rgba(166, 115, 236, 0.00) !important;
+    color: #fff !important;
+}
+
+.rowThree #viewOne ul{
+    width: 100%;
+    overflow: hidden;
+}
+.rowThree #viewOne ul li{
+    float: left;
+    width: 100%;
+    text-align: left;
+    color: #000000;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.rowThree #viewOne li:hover{
+    background-color: #D4D4D4;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+#mainView {
+    border: 1px solid rgba(162, 162, 162, 0.14);
+    clear: both;
+    padding: 5%;
+    font-size: 13px;
+    overflow: hidden;
+}
+#mainGroup2 {
+    /*border: 1px solid rgba(162, 162, 162, 0.14);*/
+    clear: both;
+    padding: 5%;
+    font-size: 13px;
+    overflow: hidden;
+}
+
+#viewOne{
+    /*margin-top: 2%;*/
+}
+
+#viewOne ul{
+    width: 100%;
+    overflow: hidden;
+}
+#viewOne ul li{
+    float: left;
+    width: 100%;
+    text-align: left;
+    color: #000000;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+
+
+#viewOne li:hover{
+    background-color: #D4D4D4;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+#viewOne li:hover > h1 a{
+    color: rgba(11, 72, 105, 0.89) !important;
+    text-decoration: none;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+#viewOne li:hover > p{
+    color: rgba(0, 0, 0, 0.6);
+    /*background-color: #D4D4D4;*/
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+#viewOne h1{
+    color: #39B5EF;
+}
+#viewOne p{
+    color: rgba(77, 77, 77, 0.72);
+  }
+
+#viewOne a, #viewOne a:link, #viewOne a:target, #viewOne a:active{
+    color: #39B5EF;
+    text-decoration: none;
+}
+
+
+#viewTwo{
+    /*margin-top: 2%;*/
+}
+
+#viewTwo ul{
+    width: 100%;
+    overflow: hidden;
+}
+#viewTwo ul li{
+    float: left;
+    width: 100%;
+    text-align: left;
+    color: #000000;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+#viewTwo li:hover{
+    background-color: #D4D4D4;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+#viewTwo li:hover > h1 a{
+    color: rgba(11, 72, 105, 0.89) !important;
+    text-decoration: none;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+#viewTwo li:hover > p{
+    color: rgba(0, 0, 0, 0.6);
+    background-color: #D4D4D4;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+#viewTwo h1{
+    color: #39B5EF;
+}
+#viewTwo p{
+    color: rgba(77, 77, 77, 0.72);
+}
+
+#viewOne #datepicker-23-3268-title{
+    top: -11px;
+    position: relative;
+}
+#viewTwo #datepicker-23-3268-title{
+    top: -11px;
+    position: relative;
+}
+#viewOne a, #viewOne a:link, #viewOne a:target, #viewOne a:active{
+    color: #39B5EF;
+    text-decoration: none;
+}
+
+.addInput ul{
+    margin-bottom: 2% !important;
+}
+.addInput ul li{
+
+}
+
+.full button span {
+    background-color: limegreen;
+    border-radius: 32px;
+    color: black;
+}
+.partially button span {
+    background-color: orange;
+    border-radius: 32px;
+    color: black;
+}
+
+
+/*custom font - Montserrat*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+/*basic reset*/
+* {margin: 0; padding: 0;}
+/*forcing the body to take 100% height*/
+html, body {min-height: 100%;}
+/*a nice BG*/
+body {
+    background: #544; /*fallback*/
+    background: linear-gradient(#544, #565);
+}
+
+/*Thumbnail Background*/
+.thumb {
+    width: 400px; height: 300px; margin: 70px auto;
+    perspective: 1000px;
+}
+.thumb a {
+    display: block; width: 100%; height: 100%;
+    /*double layered BG for lighting effect*/
+    background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("http://www.writells.com/users/profile/m.onyesom@gmail.com/imgs/20141005_131815[2].jpg");
+    /*disabling the translucent black bg on the main image*/
+    background-size: 0, cover;
+    /*3d space for children*/
+    transform-style: preserve-3d;
+    transition: all 0.5s;
+}
+.thumb:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.thumb a:after {
+    /*36px high element positioned at the bottom of the image*/
+    content: ''; position: absolute; left: 0; bottom: 0;
+    width: 100%; height: 36px;
+    /*inherit the main BG*/
+    background: inherit; background-size: cover, cover;
+    /*draw the BG bottom up*/
+    background-position: bottom;
+    /*rotate the surface 90deg on the bottom axis*/
+    transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.thumb a span {
+    color: white; text-transform: uppercase;
+    position: absolute; top: 100%; left: 0; width: 100%;
+    font: bold 12px/36px Montserrat; text-align: center;
+    /*the rotation is a bit less than the bottom surface to avoid flickering*/
+    transform: rotateX(-89.99deg); transform-origin: top;
+    z-index: 1;
+}
+/*shadow*/
+.thumb a:before {
+    content: ''; position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+    /*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+    opacity: 0.15;
+    transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+    transform-origin: bottom;
+}
+.thumb:hover a:before {
+    opacity: 1;
+    /*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+    box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+    /*pushing the shadow down and scaling it down to size*/
+    transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+.rowContacts{
+    /*display: none;*/
+}
+
+.contactList ul{
+    padding: 3%;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+.contactList li{
+    float: left;
+    line-height: 25px;
+    /*position: relative;*/
+    cursor: pointer;
+    transition: all 0.3s ease-in 0s;
+    padding: 1% 0%;
+    width: 100%;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.contactList li:hover{
+    background-color: rgba(157, 157, 157, 0.31) !important;
+    color: #fff;
+    margin-left: 2% !important;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+/*.contactList li:hover:before{
+    content: "";
+    border-color: transparent transparent transparent #E20606;
+    border-style: solid;
+    border-width: 4px 5px 4px 4px;
+    display: block;
+    height: 0px;
+    width: 0px;
+    right: -2.6%;
+    top: 0.5em;
+    position: relative;
+    float: right;
+}*/
+.contactList img{
+    width: 15%;
+    float: left;
+    padding: 2%;
+    background-color: #FFF;
+    margin-right: 2.5%;
+}
+
+.contactList ul li > ul{
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 60%;
+    /*left: 100%;*/
+    left: 99%;
+    overflow-y: scroll;
+    display: none;
+    /*background-color: rgba(8, 36, 45, 0.9);*/
+    /*background-color: rgba(8, 3f6, 45, 1);*/
+    /*background-color: #34A6CB;*/
+    background-color: rgba(164, 164, 164, 0.46);
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in 0s;
+}
+
+.contactList ul li:hover > ul{
+    left: 99%;
+    display: block;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+.contactList ul ul li{
+    position: relative;
+    margin-top: 0;
+   top: -1.5%;
+   width: 100%;
+    padding: 2%;
+    padding-top: 0;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+#rightContact{
+    /*left: -2000px;*/
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    position: relative;
+}
+
+.quickMenu{
+    position: fixed;
+    top: 6.5%;
+    right: 0.5%;
+    background: rgba(133, 206, 234, 0.4) none repeat scroll 0% 0%;
+    width: 3.5%;
+    height: auto;
+}
+.quickMenu ul{
+position: relative;
+}
+.quickMenu li{
+    cursor: pointer;
+    position: relative;
+}
+.quickMenu ul li > ul{
+    width: 100px;
+    left: -2000px;
+    position: absolute;
+    top: 12.5%;
+    -webkit-transition: left 0.3s ease-in;
+    -moz-transition: left 0.3s ease-in;
+    -ms-transition: left 0.3s ease-in;
+    transition: left 0.3s ease-in;
+
+}
+.quickMenu ul li:hover > ul{
+    left: -220%;
+    -webkit-transition: left 0.3s ease-in;
+    -moz-transition: left 0.3s ease-in;
+    -ms-transition: left 0.3s ease-in;
+    transition: left 0.3s ease-in;
+
+}
+.quickMenu ul ul li{
+    position: relative;
+    /*left: -100%;*/
+    color: #FFF;
+    font-weight: bold;
+    background: rgba(75, 179, 236, 0.48);
+    padding: 10%;
+    width: 100%;
+    text-align: right;
+    
+}
+
+.quickMenu img{
+    width: 100%;
+    /*padding: 4%;*/
+    background-color: rgba(14, 53, 62, 0.29);
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.quickMenu li:hover > img{
+    /*background-color: #197FA1;*/
+    background-color: #fff;
+    border-radius: 100%;
+    padding: 10%;
+/*  -webkit-filter: grayscale(1);
+    -ms-filter: grayscale(1);
+    filter: grayscale(1);*/
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.contactList section .bg-info {
+    padding: 2%;
+    margin-bottom: 2%;
+}
+.contactList section {
+    /*-moz-box-shadow: 0 0 5px #888;*/
+    /*-webkit-box-shadow: 0 0 5px#888;*/
+    /*box-shadow: 0 0 5px #888;*/
+    border-bottom: solid 1px #FFF;
+    margin-bottom: 4%;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.41);
+}
+.contactList section p{
+    color: #292929 !important
+}
+
+.contactList .col-md-12 h1{
+    color: #fff !important;
+}
+
+.arrow:before{
+    content: "";
+    border-color: transparent transparent transparent rgb(54, 77, 94);
+    border-style: solid;
+    border-width: 4px 5px 4px 4px;
+    display: block;
+    height: 0px;
+    width: 0px;
+    right: -4%;
+    top: 0.5em;
+    position: relative;
+    float: right;
+}
+
