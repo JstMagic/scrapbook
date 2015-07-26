@@ -91,8 +91,8 @@ class routes extends whois
         if (!empty($default) && $checkAssignmentDefault === 0 && $checkAssignmentError === 0 && $finalTrueFalse === 0) {
             echo $contents = file_get_contents(VIEW . $defaultPage_dir. "/" . $default . ".php");
 
-//        }elseif(!in_array($host,$basename) && $this->type != "moderate") {
-        }elseif(!in_array($host,$basename)) {
+        }elseif(!in_array($host,$basename) && $this->type != "moderate") {
+//        }elseif(!in_array($host,$basename)) {
             if (!file_exists(ROOT . "/404.php")) {
                 $f = fopen(ROOT . "/404.php", "w");
                 fclose($f);
