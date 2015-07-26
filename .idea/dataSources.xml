@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="2927764589">
+  <component name="DataSourceManagerImpl" format="xml" hash="171183190">
     <data-source source="LOCAL" name="MySQL - scrapbook@localhost" uuid="18498cfe-29d9-415b-88b1-672534299f16">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>

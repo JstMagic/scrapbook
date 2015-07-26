@@ -20,11 +20,10 @@ class flex extends compose{
 
         $this->table('contact', function(handler $make){
 
-            $make->int('id', 11);
+            $make->int('id', 11, ['increment'=>'auto_increment']);
             $make->string('name', 255, ['default'=>'name here']);
-//            $make->incrementId('id');
-//            $make->setPrimarykey('id');
-//            $make->setUniquekey('name');
+            $make->setPrimarykey('id');
+            $make->setUniquekey('name');
 
         });
 

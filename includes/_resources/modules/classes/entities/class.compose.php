@@ -47,7 +47,7 @@ class compose extends handler
                $exec->exec($alterString);
            }catch (PDOException $e){
 
-           echo $e;
+           $message = $e;
            }
        }
        if(!empty($this->string2Name)) {
@@ -102,7 +102,7 @@ class compose extends handler
 
             $info .= "</div>";
 
-            echo $info;
+//            echo $info;
         }
 
     }
