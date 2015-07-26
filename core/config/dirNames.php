@@ -7,7 +7,7 @@
  */
 $env = "local";
 
-$RootDirName = "/scrapbook_package";
+$RootDirName = "/scrapbook";
 $_root_ = $_SERVER['DOCUMENT_ROOT'];
 
 

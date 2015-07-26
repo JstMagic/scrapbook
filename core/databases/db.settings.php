@@ -21,7 +21,7 @@ class db extends settings
     function stream(){
 
 
-        $whatToUse = "conn1";
+        $whatToUse = "conn2";
         // after adjusting the database below to your preferences, enter a particular connection to use
         //  Note: only one connection can be used at a time, if you are working on a production server,
         //   then modify your choices
