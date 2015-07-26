@@ -8,6 +8,31 @@
 ?>
 <div class="container-fluid">
     <? include_once 'sidebar.php'?>
-    <? include_once 'rightSidebar.php'?>
+    <?
+    switch(isset($_GET['page'])){
+
+        case "events":
+            $file = 'pages/events.php';
+            break;
+        case "planners":
+            $file = 'pages/planners.php';
+            break;
+        case "groups" :
+            $file = 'pages/groups.php';
+            break;
+        case "messages" :
+            $file = 'pages/messages.php';
+            break;
+        case 'contacts' :
+            $file = 'pages/contacts.php';
+            break;
+        case 'logs' :
+            $file = 'pages/logs.php';
+            break;
+        default :
+            $file = 'rightSidebar.php';
+            break;
+    }
+    include_once $file?>
 </div>
 <? include_once 'fixedMenus.php' ?>

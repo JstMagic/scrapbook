@@ -38,10 +38,10 @@ class handlerHelper
     /**
      * @param null $page if left blank page will automatically be loaded else load specification
      */
-    public function magicPage($page =  null){
+    /*public function magicPage($page =  null){
 
         $currentPath = trim($_SERVER["REQUEST_URI"]);
         $piecesFromPath = explode("/", $currentPath);
         if()        $checkAssignment = (end($piecesFromPath) === $fileName ? true : false)
-    }
+    }*/
 }
