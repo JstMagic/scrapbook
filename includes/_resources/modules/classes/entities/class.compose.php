@@ -28,6 +28,7 @@ class compose extends handler
            $exec->exec($table);
        }catch (PDOException $e)   {
 
+           $message = $e;
        }
        if(!empty($this->intName)){
            try {
@@ -36,6 +37,7 @@ class compose extends handler
                $exec->exec($alterint);
            }catch (PDOException $e){
 
+               $message = $e;
            }
        }
        if(!empty($this->stringName)){
@@ -45,6 +47,7 @@ class compose extends handler
                $exec->exec($alterString);
            }catch (PDOException $e){
 
+           echo $e;
            }
        }
        if(!empty($this->string2Name)) {
@@ -55,6 +58,7 @@ class compose extends handler
                echo $this->string2Name." added successfully to ". $createdTableName ."Table";
            }catch (PDOException $e){
 
+               $message = $e;
            }
 
        }if(!empty($this->textName)) {
@@ -64,7 +68,7 @@ class compose extends handler
                $exec->exec($alterText);
                echo $this->textName." added successfully to ". $createdTableName ."Table";
            }catch (PDOException $e){
-//               echo $e;
+               $message = $e;
            }
     }
 
@@ -75,7 +79,7 @@ class compose extends handler
                 echo "Primary key added successfully to ". $this->PrimaryField;
             }
         }catch (PDOException $e){
-
+            $message = $e;
 
         }
         try {
@@ -83,10 +87,22 @@ class compose extends handler
                 $uniCost = "ADD CONSTRAINT unique_$this->UniqueField UNIQUE ($this->UniqueField)";
                 $unique = "ALTER TABLE `{$createdTableName}` $uniCost";
                 $exec->exec($unique);
-                echo "Primary key added successfully to ". $this->UniqueField;
+                echo "Unique key added successfully to ". $this->UniqueField;
             }
         }catch (PDOException $e){
-            echo $e;
+            $message = $e;
+        }
+
+        if(!empty($message)){
+            $info = "<div style='width: 100%; margin: 0 auto; padding: 2%;box-shadow: 0 0 5px #ccc; height: auto'>";
+
+            $info .= "<p>DATABASE INFORMATION</p>";
+
+            $info .= "<p>ERROR MESSAGE     : $message</p>";
+
+            $info .= "</div>";
+
+            echo $info;
         }
 
     }

@@ -177,18 +177,28 @@ class handler
         $this->passwordName = $passwordName;
     }
 
-
+    /**
+     * @param $incrementId
+     */
     function increment($incrementId)
     {
         $this->incrementId = $incrementId;
     }
 
+    /**
+     * @param $dateTime
+     * @param array $dateTimeOption
+     */
     function datetime($dateTime, $dateTimeOption = array())
     {
 
         $this->datetime = $dateTime; $this->dateTimeOption = $dateTimeOption;
     }
 
+    /**
+     * @param $timeStamp
+     * @param array $timeStampOption
+     */
     function timestamp($timeStamp, $timeStampOption=array())
     {
         $this->timestamp = $timeStamp; $this->dateTimeOption = $timeStampOption;

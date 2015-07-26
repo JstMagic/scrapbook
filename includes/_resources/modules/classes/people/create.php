@@ -5,7 +5,7 @@
  * Date: 19/05/2015
  * Time: 15:21
  */
-error_reporting(E_ALL);
+
 require_once "/../../../module/classes/interfaces/people.php";
 require_once"/../../../../../core/databases/database.php";
 

@@ -18,8 +18,13 @@ class flex extends compose{
     public function raise(){
 
 
-        $this->table('an', function(handler $make){
+        $this->table('contact', function(handler $make){
 
+            $make->int('id', 11);
+            $make->string('name', 255, ['default'=>'name here']);
+//            $make->incrementId('id');
+//            $make->setPrimarykey('id');
+//            $make->setUniquekey('name');
 
         });
 

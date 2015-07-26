@@ -16,12 +16,12 @@ include_once ROOT."/app.autoloader.php";
 
 //$streamline->getInfo();
 
-$stmt= $exec->prepare("INSERT INTO person (firstname,lastname,email) VALUE (?, ?, ?) ");
+/*$stmt= $exec->prepare("INSERT INTO person (firstname,lastname,email) VALUE (?, ?, ?) ");
 $stmt->bindParam("1",$firstname);
 $stmt->bindParam("2",$lastname);
 $stmt->bindParam("3",$emailAddr);
 
-$firstname = 'Jeery'; $lastname = 'Jar'; $emailAddr = 'benreece@email.com';
+$firstname = 'Jeery'; $lastname = 'Jar'; $emailAddr = 'benreece@email.com';*/
 
 //$stmt->execute();
 
