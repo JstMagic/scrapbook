@@ -9,12 +9,11 @@
 <div class="container-fluid">
     <? include_once 'sidebar.php';
 
-    $page = $_GET['page'];
+    $page = $_GET['p'];
 
     switch($page){
 
         case "events":
-            echo "<H1> hello</H1>";
             $file = 'pages/events.php';
             break;
         case "planners":

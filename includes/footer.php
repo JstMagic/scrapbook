@@ -6,7 +6,7 @@
  * Time: 10:33
  */
 ?>
-<script type="text/javascript" src="http://scrapbook.writells.com/js/features.js"></script>
+<script type="text/javascript" src="/js/features.js"></script>
 <script>
     $.backstretch([
         /*"http://www.paulbondart.com/paintings/Shelter.jpg"
