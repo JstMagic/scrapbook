@@ -7,11 +7,14 @@
  */
 ?>
 <div class="container-fluid">
-    <? include_once 'sidebar.php'?>
-    <?
-    switch(isset($_GET['page'])){
+    <? include_once 'sidebar.php';
+
+    $page = $_GET['page'];
+
+    switch($page){
 
         case "events":
+            echo "<H1> hello</H1>";
             $file = 'pages/events.php';
             break;
         case "planners":
