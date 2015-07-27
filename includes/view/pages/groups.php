@@ -5,6 +5,7 @@
  * Date: 27/06/2015
  * Time: 20:39
  */
+use Contact_PreRelease\contact_module;
 
 ?>
 
@@ -182,31 +183,7 @@
 </div>
 
 <div class="rightColumn" id="rightContact" ng-controller="TypeaheadCtrl" style="margin-top: 2%;">
-    <div class="row rowContacts" id = 'bindPlanner'>
-        <div class="col-md-8">
-            <div class="addContactList">
 
-                 <script type="text/ng-template" id="customTemplate.html">
-                    <a>
-                        <img ng-src="http://upload.wikimedia.org/wikipedia/commons/thumb/{{match.model.flag}}" width="16">
-                        <span bind-html-unsafe="match.label | typeaheadHighlight:query"></span>
-                    </a>
-                </script>
-                <div class='container-fluid'">
-                <h1>Add New Contact</h1><br>
-                    <input type="text" ng-model="FirstName" placeholder="First Name" typeahead=" Fname for Fname in names | filter:$viewValue | limitTo:8" class="form-control">
-                    <input type="text" ng-model="LastName"  placeholder="Last Name" typeahead="  Lname for Lname in names | filter:$viewValue | limitTo:8" class="form-control">
-                    <input type="datetime" ng-model="D.O.B" placeholder="D.O.B" class="form-control">
-                    <input type="email" ng-model="Email" placeholder="@ Address" class="form-control">
-                    <input type="number" ng-model="Tel" placeholder="Telephone Number" class="form-control">
-                    <input type="text" ng-model="Note" placeholder="Note" class="form-control">
-<!--               <input type="text" ng-model="selected" typeahead="state for state in states | filter:$viewValue | limitTo:8" class="form-control">-->
-                    <input type="text" ng-model="asyncSelected" placeholder="Person Location" typeahead="address for address in getLocation($viewValue)" typeahead-loading="loadingLocations" class="form-control">
-                    <i ng-show="loadingLocations" class="glyphicon glyphicon-refresh"></i>
-<!--                    <input type="text" ng-model="customSelected" placeholder="Custom template" typeahead="state as state.name for state in statesWithFlags | filter:{name:$viewValue}" typeahead-template-url="customTemplate.html" class="form-control">-->
-                </div>
-            </div>
-        </div>
         <div class="col-md-4">
             <div class='container-fluid'">
             <div class="contactList">
@@ -224,3 +201,7 @@
     </div>
 
 </div>
+
+<? $contact = new contact_module();
+//echo $new = $contact->addContact();
+?>

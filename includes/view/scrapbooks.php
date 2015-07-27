@@ -20,6 +20,7 @@
             $file = 'pages/planners.php';
             break;
         case "groups" :
+            echo "yo";
             $file = 'pages/groups.php';
             break;
         case "messages" :
