@@ -56,6 +56,8 @@ define("DATA",CLASSES."data/");
 
 define("ENTITIES",CLASSES."entities/");
 
+define("PRERELEASE",CLASSES."pre-release/");
+
 define("INTERFACES",CLASSES."interfaces/");
 
 define("CONTROLLER",INCLUDES."controller/");
