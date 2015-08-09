@@ -5,8 +5,9 @@
  * Date: 27/06/2015
  * Time: 20:39
  */
-use Contact_PreRelease\contact_module;
 
+include_once ROOT."/pkg.autoloader.php";
+include_once PRERELEASE."contact/pkg.contact.php";
 ?>
 
 <div class="rightColumn">
@@ -182,26 +183,9 @@ use Contact_PreRelease\contact_module;
     </div>-->
 </div>
 
-<div class="rightColumn" id="rightContact" ng-controller="TypeaheadCtrl" style="margin-top: 2%;">
+    <? addContact($pkg_contact,['preview'=>'yes']); ?>
 
-        <div class="col-md-4">
-            <div class='container-fluid'">
-            <div class="contactList">
-            <h1>
-                Preview Board
-            </h1><br>
-           <ul><li><pre> {{FirstName}} {{LastName}}</pre></li>
-               <li><pre> {{D.O.B}}</pre></li>
-               <li><pre> {{Email}}</pre></li>
-               <li><pre> {{Tel}}</pre></li>
-               <li><pre> {{Note}}</pre></li>
-               <li><pre> {{asyncSelected}}</pre></li>
-           </ul></div>
-        </div>
-    </div>
 
 </div>
 
-<? $contact = new contact_module();
-//echo $new = $contact->addContact();
-?>
+
