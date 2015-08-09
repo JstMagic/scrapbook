@@ -5,7 +5,10 @@
  * Date: 22/05/2015
  * Time: 11:33
  */
+
+include_once ROOT."/pkg.autoloader.php";
 ?>
+
 <div class="container-fluid">
     <? include_once 'sidebar.php';
 
@@ -20,13 +23,12 @@
             $file = 'pages/planners.php';
             break;
         case "groups" :
-            echo "yo";
             $file = 'pages/groups.php';
             break;
         case "messages" :
             $file = 'pages/messages.php';
             break;
-        case 'contacts' :
+        case 'contacts':
             $file = 'pages/contacts.php';
             break;
         case 'logs' :
