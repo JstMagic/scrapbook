@@ -6,11 +6,13 @@
  * Time: 14:12
  */
 include_once ROOT."/app.autoloader.php";
-spl_autoload_register(function ($class) {
+/*spl_autoload_register(function ($class) {
     include "class.".$class . '.php';
-});
+});*/
 
-
+/**
+ * Class settings
+ */
 class settings extends database {
     /**
      * @var string $whatToUse connection to use which takes a numeric number, how ever you have declared it
@@ -64,9 +66,6 @@ class settings extends database {
             }
         }
 
-
-
     }
-
 
 }
