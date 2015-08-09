@@ -48,7 +48,7 @@ class db extends settings
 
                 "conn2" => [
 
-                    "DB__HOST" => "mysql1000.mochahost.com",
+                    "DB__HOST" => "mysql1001.mochahost.com",
                     "DB__NAME" => "monyesom_scrapbook",
                     "DB__USER" => "monyesom_martin",
                     "DB__PASSWORD" => "justasithought123",
@@ -58,6 +58,7 @@ class db extends settings
             ]
 
         ];
+
 
         /**
          * in db sections, we can specify multiple connections to use, atm i have two, one for localhost and one for my live server
