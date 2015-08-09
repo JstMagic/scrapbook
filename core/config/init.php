@@ -11,6 +11,7 @@ include_once "dirNames.php";
 include ENTITIES.FILE_ROUTE;
 include DATABASE."/db.settings.php";
 include_once ROOT."/app.autoloader.php";
+include_once ROOT."/pkg.autoloader.php";
 
 
 
