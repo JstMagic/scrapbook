@@ -9,19 +9,26 @@ include "../config/dirNames.php";
 include_once ROOT."/app.autoloader.php";
 include ENTITIES."class.flex.php";
 
+/**
+ * Class flex
+ */
 class flex extends compose{
-
+    /**
+     * return function raise()
+     */
     public function __construct(){
         $this->raise();
+        $this->moSimpledFieldsQuery();
     }
 
     public function raise(){
 
 
-        $this->table('contact', function(handler $make){
+        $this->table('person', function (handler $make) {
 
             $make->int('id', 11, ['increment'=>'auto_increment']);
-            $make->string('name', 255, ['default'=>'name here']);
+            $make->string('lastname', 255, ['default' => 'name here']);
+
             $make->setPrimarykey('id');
             $make->setUniquekey('name');
 
@@ -37,7 +44,21 @@ class flex extends compose{
 
     }*/
 
+    public function moSimpledFieldsQuery()
+    {
+
+        $MosimpleFields = new simpleFieldsQuery();
+        $MosimpleFields->moSimpleQuery(['statement' => 'insert', 'table' => 'phone', 'field' => ['name', 'make', 'model', 'person_id'], 'value' => ['Bill', 'Gate', 'bill.wright@aceville.com', '11']]);
+
+    }
+
 }
+
+//query database
+
+//$MosimpleFields = new simpleFieldsQuery();
+//$MosimpleFields->moSimpleQuery(['statement' => 'insert', 'table' => 'person', 'field' => ['firstname', 'lastname', 'email'], 'value' => ['John', 'Wright', 'john.wright@aceville.com']]);
+
 $flex = new flex();
 $handler = new compose();
 

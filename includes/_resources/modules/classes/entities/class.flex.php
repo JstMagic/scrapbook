@@ -14,10 +14,13 @@ $realPath = realpath("../../../../../");
 include_once"db.settings.php";
 
 
-
-
+/**
+ * Class up
+ */
 class up extends handler {
-
+    /**
+     *
+     */
     public function __construct(){
         $this->setTable();
     }

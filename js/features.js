@@ -1,7 +1,7 @@
 /**
  * Created by Martin on 22/05/2015.
  */
-angular.module('app',['ui.bootstrap']).controller('TimepickerDemoCtrl', function ($scope, $log) {
+angular.module('app', ['ui.bootstrap']).controller('TimepickerDemoCtrl', function ($scope, $log) {
     $scope.mytime = new Date();
 
     $scope.hstep = 1;
@@ -13,14 +13,14 @@ angular.module('app',['ui.bootstrap']).controller('TimepickerDemoCtrl', function
     };
 
     $scope.ismeridian = true;
-    $scope.toggleMode = function() {
-        $scope.ismeridian = ! $scope.ismeridian;
+    $scope.toggleMode = function () {
+        $scope.ismeridian = !$scope.ismeridian;
     };
 
-    $scope.update = function() {
+    $scope.update = function () {
         var d = new Date();
-        d.setHours( 14 );
-        d.setMinutes( 0 );
+        d.setHours(14);
+        d.setMinutes(0);
         $scope.mytime = d;
     };
 
@@ -28,7 +28,7 @@ angular.module('app',['ui.bootstrap']).controller('TimepickerDemoCtrl', function
         $log.log('Time changed to: ' + $scope.mytime);
     };
 
-    $scope.clear = function() {
+    $scope.clear = function () {
         $scope.mytime = null;
     };
 });
@@ -241,8 +241,7 @@ angular.module('app')
 
         $scope.onClickTab = function (tab) {
             $scope.currentTab = tab.url;
-        }
-
+        };
         $scope.isActiveTab = function (tabUrl) {
             return tabUrl == $scope.currentTab;
         }
@@ -254,9 +253,9 @@ angular.module('app')
             title: 'PLANNER',
             url: 'planner.tpl.html'
 
-        },{
-                title: 'EVENTS',
-                url: 'events.tpl.html'
+        }, {
+            title: 'EVENTS',
+            url: 'events.tpl.html'
         }, {
             title: 'LOGS',
             url: 'logs.tpl.html'
@@ -276,27 +275,27 @@ angular.module('app')
     }]);
 
 /*angular.module('app',[])
-    .controller('LoadTabController',['$scope', function($scope){
-        $scope.swaps = [{
-            name: 'CONTACT'
-        },{
-            name: 'PLANNER'
-        }, {
-            name: 'MESSAGES'
+ .controller('LoadTabController',['$scope', function($scope){
+ $scope.swaps = [{
+ name: 'CONTACT'
+ },{
+ name: 'PLANNER'
+ }, {
+ name: 'MESSAGES'
 
-        }];
+ }];
 
-        $scope.current = 'CONTACT';
-        $scope.swapBinding = 'CONTACT';
-        $scope.onClickSwap = function (swap) {
-            $scope.current =swap.name;
-            $scope.swapBinding = swap.name;
-        };
+ $scope.current = 'CONTACT';
+ $scope.swapBinding = 'CONTACT';
+ $scope.onClickSwap = function (swap) {
+ $scope.current =swap.name;
+ $scope.swapBinding = swap.name;
+ };
 
-        $scope.isSwapAtive = function (swapUrl) {
-            return swapUrl == $scope.current;
-        }
-    }]);*/
+ $scope.isSwapAtive = function (swapUrl) {
+ return swapUrl == $scope.current;
+ }
+ }]);*/
 
 $(document).ready(function () {
 
@@ -318,14 +317,16 @@ $(document).ready(function () {
                 '-o-transition': 'all 0.3s ease-in'
             });
 
-            $('.contactList ul ul').css({'display': 'none',
+            $('.contactList ul ul').css({
+                'display': 'none',
                 'transition': 'all 0.3s ease-in',
                 '-moz-transition': 'all 0.3s ease-in',
                 '-webkit-transition': 'all 0.3s ease-in',
                 '-ms-transition': 'all 0.3s ease-in',
                 '-o-transition': 'all 0.3s ease-in'
             });
-            $(this).css({'margin-left': "2%", 'background-color': 'rgba(38, 63, 81, 0.7)',
+            $(this).css({
+                'margin-left': "2%", 'background-color': 'rgba(38, 63, 81, 0.7)',
                 'transition': 'all 0.3s ease-in',
                 '-moz-transition': 'all 0.3s ease-in',
                 '-webkit-transition': 'all 0.3s ease-in',
@@ -341,7 +342,8 @@ $(document).ready(function () {
             $(this).find('h1').css({'background-color': 'rgba(38, 63, 81, 0.7)'});
             $(this).addClass('arrow');
 
-            $(this).find('ul').css({'display':'block',
+            $(this).find('ul').css({
+                'display': 'block',
                 'transition': 'all 0.3s ease-in',
                 '-moz-transition': 'all 0.3s ease-in',
                 '-webkit-transition': 'all 0.3s ease-in',
@@ -352,41 +354,40 @@ $(document).ready(function () {
     });
 
 
-
-
-   /* $('.contactList ul li').hover(function () {
-        $('.contactList ul li').css({'background-color': 'rgba(255, 255, 255, 0)'});
-        $(this).css({
-            '-webkit-transition': "all 0.3s ease-in",
-            '-moz-transition': "all 0.3s ease-in",
-            '-ms-transition': "all 0.3s ease-in",
-            '-o-transition': "all 0.3s ease-in",
-            'transition': "all 0.3s ease-in",
-            'background-color': 'rgba(155, 155, 155, 0.3)'
-        });
-    });*/
+    /* $('.contactList ul li').hover(function () {
+     $('.contactList ul li').css({'background-color': 'rgba(255, 255, 255, 0)'});
+     $(this).css({
+     '-webkit-transition': "all 0.3s ease-in",
+     '-moz-transition': "all 0.3s ease-in",
+     '-ms-transition': "all 0.3s ease-in",
+     '-o-transition': "all 0.3s ease-in",
+     'transition': "all 0.3s ease-in",
+     'background-color': 'rgba(155, 155, 155, 0.3)'
+     });
+     });*/
 
 
 });
 
-$(document).ready(function(){
+$(document).ready(function () {
 
     $('#planner.tpl.html').click(function () {
         alert('ji');
     });
 
     var $array = [{
-        name :'CONTACTS',
-        link : '#rightContact'
-    },{ name: '#groups.tpl.html',
+        name: 'CONTACTS',
+        link: '#rightContact'
+    }, {
+        name: '#groups.tpl.html',
         link: 'rightContacts'
     }];
 
-    $.each($array,function (key, value) {
-        $.each(value, function(objkey, objvalue){
+    $.each($array, function (key, value) {
+        $.each(value, function (objkey, objvalue) {
             //alert(objkey + ": " + objvalue);
 
-            $(objvalue).click(function(){
+            $(objvalue).click(function () {
                 console.log(objvalue);
 
                 //alert(val);
@@ -397,7 +398,30 @@ $(document).ready(function(){
 
 });
 
-$(function()
-{
+$(function () {
     //$('.contactList ul ul').jScrollPane();
+});
+
+$(document).ready(function () {
+    $('._profile').mouseenter(function () {
+        $('.container-fluid').css({
+            'margin-top': '7%',
+            'transition': 'all 0.3s ease-in',
+            '-moz-transition': 'all 0.3s ease-in',
+            '-webkit-transition': 'all 0.3s ease-in',
+            '-ms-transition': 'all 0.3s ease-in',
+            '-o-transition': 'all 0.3s ease-in'
+        });
+    });
+    $('._profile').mouseleave(function () {
+        $('.container-fluid').css({
+            'margin-top': '2%',
+            'transition': 'all 0.3s ease-in',
+            '-moz-transition': 'all 0.3s ease-in',
+            '-webkit-transition': 'all 0.3s ease-in',
+            '-ms-transition': 'all 0.3s ease-in',
+            '-o-transition': 'all 0.3s ease-in'
+        });
+    });
+
 });

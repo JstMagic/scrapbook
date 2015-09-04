@@ -186,6 +186,20 @@ include_once PRERELEASE."contact/pkg.contact.php";
 </div>
 
 <? addContact($pkg_contact,['preview'=>'yes']); ?>
+<?
+$Values = ['you', 'me', 'people', 'people', 'people'];
+$sanitise = '?, ';
+$question = "";
+for ($i = 0; $i < count($Values); $i++) {
+    $question .= $sanitise;
+}
+$iOne = array_combine(range(1, count($Values)), array_values($Values));
+foreach ($iOne as $value => $k) {
 
+    echo $iOne;
+}
+
+echo "<h1> NICE " . substr($question, 0, -2) . "</h1>";
+?>
 
 </div>

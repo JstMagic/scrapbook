@@ -6,7 +6,8 @@
  * Time: 16:16
  */
 
-     function application_autoLoader($class=null) {
+function application_autoLoader_base($class = null)
+{
         $class = strtolower($class);
         $class_filename = 'class.'.strtolower($class).'.php';
         $class_root = dirname(__FILE__);
@@ -36,5 +37,7 @@
         if ($serialized_paths != $path_cache) { file_put_contents($cache_file, $serialized_paths); }
     }
 
-spl_autoload_register('application_autoLoader');
+
+spl_autoload_register('application_autoLoader_base');
+
 

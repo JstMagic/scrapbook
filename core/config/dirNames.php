@@ -6,21 +6,30 @@
  * Time: 19:50
  */
 $env = "local";
+$env_root = "/scrapbook_package";
 
 $RootDirName = "/scrapbook";
 $_root_ = $_SERVER['DOCUMENT_ROOT'];
 
 
-if(strpos($_root_, $RootDirName) !== false){
-    if(!defined('ROOT')) {
+if ($env !== 'local') {
+    if (strpos($_root_, $RootDirName) !== false) {
+        if (!defined('ROOT')) {
 
-        define("ROOT", $_SERVER['DOCUMENT_ROOT']);
+            define("ROOT", $_SERVER['DOCUMENT_ROOT']);
+        }
+    } else {
+        if (!defined('ROOT')) {
+            define("ROOT", $_SERVER['DOCUMENT_ROOT'] . $RootDirName);
+        }
     }
 }else{
     if(!defined('ROOT')) {
-        define("ROOT", $_SERVER['DOCUMENT_ROOT'] . $RootDirName);
+        define("ROOT", $_SERVER['DOCUMENT_ROOT'] . $env_root);
     }
-}include_once ROOT."/core/config/dirNames.php";
+}
+
+include_once ROOT . "/core/config/dirNames.php";
 
 define("SPECIAL_ROOT",$_SERVER['SERVER_NAME']."/scrapbook/");
 

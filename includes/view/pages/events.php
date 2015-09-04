@@ -155,29 +155,31 @@
     </div>
 
 
-    <!--<div class="row rowEvents">
-        <div class="col-md-8">.col-md-8</div>
+    <div class="row rowEvents">
+        <div class="col-md-8">
+            <? echo file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/includes/package/Addon/ckeditor/samples/index.html') ?>
+        </div>
         <div class="col-md-4">.col-md-4</div>
     </div>
+    <!--
+       <div class="row rowLogs">
+           <div class="col-md-8">.col-md-8</div>
+           <div class="col-md-4">.col-md-4</div>
+       </div>
 
-    <div class="row rowLogs">
-        <div class="col-md-8">.col-md-8</div>
-        <div class="col-md-4">.col-md-4</div>
-    </div>
+       <div class="row rowPlanner">
+           <div class="col-md-8">.col-md-8</div>
+           <div class="col-md-4">.col-md-4</div>
+       </div>
 
-    <div class="row rowPlanner">
-        <div class="col-md-8">.col-md-8</div>
-        <div class="col-md-4">.col-md-4</div>
-    </div>
+       <div class="row rowMessages">
+           <div class="col-md-8">.col-md-8</div>
+           <div class="col-md-4">.col-md-4</div>
+       </div>
 
-    <div class="row rowMessages">
-        <div class="col-md-8">.col-md-8</div>
-        <div class="col-md-4">.col-md-4</div>
-    </div>
-
-    <div class="row rowGroups">
-        <div class="col-md-8">.col-md-8</div>
-        <div class="col-md-4">.col-md-4</div>
-    </div>-->
+       <div class="row rowGroups">
+           <div class="col-md-8">.col-md-8</div>
+           <div class="col-md-4">.col-md-4</div>
+       </div>-->
 </div>
 

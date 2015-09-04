@@ -6,20 +6,21 @@
  * Time: 10:53
  */
 
-include_once ROOT."/app.autoloader.php";
 
     class database{
 
+        public $pdo;
+        public $create;
         protected $DB_HOST;
         protected $DB_NAME;
         protected $DB_USER;
         protected $DB_PASSWORD;
-        public $pdo;
         protected $success;
         protected $statusMessage;
-        public $create;
 
-
+        /**
+         *
+         */
         function __construct(){
 
             $this->DB_NAME;

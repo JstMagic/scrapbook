@@ -8,6 +8,10 @@
  */
 
 include_once ROOT . "/app.autoloader.php";
+
+/**
+ * Class compose
+ */
 class compose extends handler
 {
 

@@ -8,7 +8,7 @@
 
 include_once ROOT."/pkg.autoloader.php";
 ?>
-
+<? include_once 'profile.php' ?>
 <div class="container-fluid">
     <? include_once 'sidebar.php';
 

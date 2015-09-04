@@ -8,20 +8,31 @@
 //include "/../config/dirNames.php";
 
 
-    include CLASS_DATABASES."class.settings.php";
+include CLASS_DATABASES . "class.settings.php";
+if (!function_exists('application_autoLoader_base')) {
+    include "/../../app.autoloader.php";
+}
+
 
 
 /**
  * Class db
  */
 class db extends settings
-{ public function __construct(){$this->stream();}
+{
+    /**
+     *
+     */
+    public function __construct()
+    {
+        $this->stream();
+    }
 
 
     function stream(){
 
 
-        $whatToUse = "conn2";
+        $whatToUse = "conn1";
         // after adjusting the database below to your preferences, enter a particular connection to use
         //  Note: only one connection can be used at a time, if you are working on a production server,
         //   then modify your choices

@@ -8,14 +8,6 @@
 
 ?>
 <div class="leftColumn">
-    <div class="rowOne floatLeft">
-        <div class="user-header">
-            <ul>
-                <li><img src="http://www.writells.com/users/profile/m.onyesom@gmail.com/imgs/20141005_131815[2].jpg">
-                </li>
-            </ul>
-        </div>
-    </div>
 
     <div class="rowTwo floatleft">
         <div id="tabs" ng-controller="TabsCtrl1">
@@ -34,7 +26,8 @@
                 <div class="addInput">
                     <ul><li>
                             <img src="/img/scrapbook/add_contact.png">
-                        </li></ul>
+                        </li>
+                    </ul>
                 </div>
                 <ul>
                     <li>
@@ -100,18 +93,6 @@
                             <img src="/img/scrapbook/add_contact.png">
                         </li></ul>
                 </div>
-                <div style="display:inline-block; min-height:290px;">
-                    <datepicker ng-model="dt" min-date="minDate" show-weeks="true" class="well well-sm" custom-class="getDayClass(date, mode)"></datepicker>
-                </div><br>
-                <ul><li><pre><em>{{dt | date:'fullDate' }}</em></pre></li></ul>
-
-
-
-                    <timepicker ng-model="mytime" ng-change="changed()" hour-step="hstep" minute-step="mstep" show-meridian="ismeridian"></timepicker>
-
-                    <pre class="alert alert-info">Time is: {{mytime | date:'shortTime' }}</pre>
-
-
             </div>
         </script>
 
@@ -127,13 +108,6 @@
             <div id="viewThree">
                 <h1></h1><br>
 
-                <!--<div class="thumb">
-
-                    <a href="#">
-
-                        <span>Three-eyed Robot</span>
-                    </a>
-                </div>-->
             </div>
         </script>
 

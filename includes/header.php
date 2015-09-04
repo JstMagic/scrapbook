@@ -26,6 +26,10 @@ require_once "core/config/init.php";
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="/js/perfect-scrollbar.jquery.js"></script>
     <script src="/js/perfect-scrollbar.js"></script>
+    <script src="/includes/package/Addon/ckeditor/ckeditor.js"></script>
+    <script src="/includes/package/Addon/ckeditor/samples/js/sample.js"></script>
+    <link rel="stylesheet" href="/includes/package/Addon/ckeditor/samples/css/samples.css">
+    <link rel="stylesheet" href="/includes/package/Addon/ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css">
 
     <!-- styles needed by jScrollPane -->
 

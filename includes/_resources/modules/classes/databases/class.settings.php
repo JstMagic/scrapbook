@@ -5,6 +5,7 @@
  * Date: 25/05/2015
  * Time: 14:12
  */
+//include_once "../../../app.autoloader.php";
 include_once ROOT."/app.autoloader.php";
 /*spl_autoload_register(function ($class) {
     include "class.".$class . '.php';
